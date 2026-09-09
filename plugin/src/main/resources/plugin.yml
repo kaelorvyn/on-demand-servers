@@ -1,0 +1,12 @@
+name: OnDemandServers
+version: 1.0.0
+main: com.kaelorvyn.ondemand.OnDemandPlugin
+api-version: '1.21'
+softdepend: [Citizens]
+author: Kaelorvyn
+commands:
+  ondemand:
+    permission: ondemand.admin
+permissions:
+  ondemand.admin:
+    default: op

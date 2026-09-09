@@ -1,0 +1,10 @@
+mode: lifecycle
+service: Survival
+controller: http://127.0.0.1:8791
+idle-seconds: 180
+# 大厅模式默认不自动停；改为 true 后，大厅也会在空置 idle-seconds 秒后执行 stop。
+auto-stop: false
+ready-delay-ticks: 40
+login-target: lobby
+login-delay-ticks: 60
+# 大厅模式会直接读取 Citizens NPC 的 commandtrait，无需配置 UUID 或重复填写目标服。

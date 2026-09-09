@@ -1,0 +1,7 @@
+mode: lifecycle
+service: PVP
+controller: http://127.0.0.1:8791
+idle-seconds: 180
+ready-delay-ticks: 40
+login-target: lobby
+login-delay-ticks: 60

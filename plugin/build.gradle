@@ -1,0 +1,16 @@
+plugins { id 'java' }
+
+group = 'com.kaelorvyn'
+version = '1.0.0'
+
+repositories {
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+    compileOnly files('D:/MC/server/[25567]大厅/plugins/Citizens-2.0.43-b4211.jar')
+}
+
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) } }
+tasks.withType(JavaCompile).configureEach { options.release = 21; options.encoding = 'UTF-8' }
